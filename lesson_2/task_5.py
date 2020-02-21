@@ -4,11 +4,12 @@
 
 
 def rec(m, n):
-    if m <= n:
-        if m % 10 == 0:
-            print('')
-        print(f'{m} - {chr(m)}  ', end=' ')
-        return rec(m + 1, n)
+    if m < n:
+        for i in range(m, m + 10):
+            if i <= n:
+                print(f'{i} - {chr(i)}  ', end=' ')
+        print('')
+        return rec(m + 10, n)
 
 
 rec(32, 127)
