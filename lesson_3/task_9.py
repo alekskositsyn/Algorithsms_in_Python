@@ -13,10 +13,10 @@ for line in matrix:
     for i, item in enumerate(line):
         if min_in_column[i] > item:
             min_in_column[i] = item
-for m in min_in_column:
-    print(f'{m:>4}', end='')
+for p, m in enumerate(min_in_column):
+    print(f'{m:>4} минимальный эллемент в {p + 1} столбце')
 max_item = 0
 for i in min_in_column:
     if max_item < i:
         max_item = i
-print(f'\n max = {max_item}')
+print(f'\n Максимальный элемент среди минимальных = {max_item}')
