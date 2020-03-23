@@ -6,8 +6,8 @@ import random
 
 def list_random():
     size = 10
-    min_item = 0
-    max_item = 49
+    min_item = 0.0
+    max_item = 49.9
     array = [round(random.uniform(min_item, max_item), 2) for _ in range(size)]
     return array
 
